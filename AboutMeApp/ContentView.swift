@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  AboutMeApp
-//
 //  Created by Scholar on 7/23/25.
-//
 
 import SwiftUI
 
@@ -14,25 +9,38 @@ ZStack {
     LinearGradient(colors: [.pink1, .orange1], startPoint: .top, endPoint: .bottom)
         .ignoresSafeArea()
    
-    VStack(spacing: 10.0) {
+    
+    VStack(alignment: .center, spacing: 10.0) {
+        
         Text("Hi, I'm Angelia !")
             .font(.title)
             .fontWeight(.bold)
         
         Image ("angie")
-            .resizable()
+            .resizable(resizingMode: .stretch)
             .aspectRatio(contentMode: .fit)
+            
         
-        Text("I'm 17, and I'm currently in Los Angeles! I love baking, singing, dancing, and watching F1 races!")
+        Text("I'm 17, and I'm currently in Los Angeles! I love baking, singing, dancing!")
             .font(.body)
             .fontWeight(.medium)
             .multilineTextAlignment(.center)
-    }
+            
+        Image("formula1")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+        
+        Text("I love motorsports and hope to pursue a career in it!")
+            .font(.body)
+            .fontWeight(.medium)
+            .multilineTextAlignment(.center)
+        }
     .padding(10.0)
     .background(Color.white)
-    .cornerRadius(12)
+    .cornerRadius(16)
     .shadow(radius: 5)
     . padding (.horizontal, 12.0)
+
 }
         }
                         }
