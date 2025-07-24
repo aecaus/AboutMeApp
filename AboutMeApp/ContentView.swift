@@ -12,23 +12,32 @@ ZStack {
     
     VStack(alignment: .center, spacing: 10.0) {
         
-        Text("Hi, I'm Angelia !")
-            .font(.title)
-            .fontWeight(.bold)
-        
         Image ("angie")
             .resizable(resizingMode: .stretch)
             .aspectRatio(contentMode: .fit)
-            
+            .cornerRadius(10)
         
-        Text("I'm 17, and I'm currently in Los Angeles! I love baking, singing, dancing!")
+        HStack {
+            Text("Hi, I'm Angelia !")
+                .font(.title2)
+                .fontWeight(.bold)
+
+            Text ("   Rising Senior")
+                .font(.body)
+                .fontWeight(.semibold)
+            }
+            Text("I'm 17, and I'm currently in Los Angeles! I love baking, singing, dancing!")
             .font(.body)
             .fontWeight(.medium)
             .multilineTextAlignment(.center)
-            
+        
+        Divider()
+            .padding(.vertical, 5.0)
+
         Image("formula1")
             .resizable()
             .aspectRatio(contentMode: .fit)
+            .cornerRadius(10)
         
         Text("I love motorsports and hope to pursue a career in it!")
             .font(.body)
@@ -37,10 +46,9 @@ ZStack {
         }
     .padding(10.0)
     .background(Color.white)
-    .cornerRadius(16)
+    .cornerRadius(18)
     .shadow(radius: 5)
     . padding (.horizontal, 12.0)
-
 }
         }
                         }
